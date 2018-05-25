@@ -26,3 +26,7 @@ send_keys() ：输入文本值 --仅限于prompt,在alert和confirm上没有输�
 browser.find_element_by_id('alert').click()
 a=browser.switch_to.alert()
 a.accept()
+
+
+ # 勾选前判断是否勾选
+ t = browser.find_element_by_id('c1').is_selected()
